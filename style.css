@@ -5,14 +5,14 @@
 body{
 font-family: 'Poppins', sans-serif;
 background-color: #F3F1FF;
+/* margin: 0 25% 0 25%; */
 }
 /* header and nav bar */
 .header{
-    Width: 1440px;
+    /* Width: 1440px; */
     Height: 94px;
     background-color: 
     #562EFF;
-    margin: 0 25% 0 25%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -203,8 +203,21 @@ height: 104px;
 
 /* mobil */
 @media only screen and (max-width: 688px) {
+    .container{
+        width: 100%;
+    }
+    .players, .blogs, .courses{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .player, .blog{
+        flex-direction: column;
+    }   
+}
+/* tablet devices */
+@media only screen and (min-width: 688px) and (max-width: 992) {
+
     .players{
-        background-color: red;
+        background-color: green;
     }
     
 }
